@@ -87,7 +87,7 @@ def index_get():
         'user_url': 'http://%suser{/user_id}' % (request.url_root),
         'scope_url': 'http://%sscope' % (request.url_root),
         # 'token_url': 'http://%stoken' % (request.url_root),
-        'sms_url': 'http://%ssms/' % (request.url_root)
+        'kakou_url': 'http://%skakou/' % (request.url_root)
     }
     header = {'Cache-Control': 'public, max-age=60, s-maxage=60'}
     return jsonify(result), 200, header
