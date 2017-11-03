@@ -3,7 +3,7 @@
 
 class Config(object):
     # 密码 string
-    SECRET_KEY = 'hellokitty'
+    SECRET_KEY = 'jintiandalaohu'
     # 服务器名称
     HEADER_SERVER = 'SX-UnionKakouDataServer'
     # 加密次数 int
@@ -14,10 +14,10 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = 'sqlite:///../hbc.db'
     # 数据库连接绑定 dict
     SQLALCHEMY_BINDS = {
-        'kakou': 'postgresql://postgres:root@127.0.0.1/cms'
+        'kakou': 'postgresql://vms:123@10.123.123.123:54320/vmsDB'
     }
     # 连接池大小 int
-    # SQLALCHEMY_POOL_SIZE = 5
+    #SQLALCHEMY_POOL_SIZE = 10
     # 用户权限范围 dict
     SCOPE_USER = {}
     # 白名单启用 bool

@@ -1,0 +1,1 @@
+docker run -it -d --restart=always --name union_kakou_data_ser --privileged=true -p 8380:8380 -v /home/core/GitHub:/home centos-python/orc-client:0.1 gunicorn -c /home/SX-UnionKakouDataServer/gun.py --chdir /home/SX-UnionKakouDataServer run:app

@@ -1,0 +1,1813 @@
+CREATE TABLE traffic_vehicle_pass_20150901 (CHECK (pass_time >= DATE '2015-09-01' AND pass_time < DATE '2015-09-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150904 (CHECK (pass_time >= DATE '2015-09-04' AND pass_time < DATE '2015-09-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150907 (CHECK (pass_time >= DATE '2015-09-07' AND pass_time < DATE '2015-09-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150910 (CHECK (pass_time >= DATE '2015-09-10' AND pass_time < DATE '2015-09-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150913 (CHECK (pass_time >= DATE '2015-09-13' AND pass_time < DATE '2015-09-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150916 (CHECK (pass_time >= DATE '2015-09-16' AND pass_time < DATE '2015-09-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150919 (CHECK (pass_time >= DATE '2015-09-19' AND pass_time < DATE '2015-09-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150922 (CHECK (pass_time >= DATE '2015-09-22' AND pass_time < DATE '2015-09-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150925 (CHECK (pass_time >= DATE '2015-09-25' AND pass_time < DATE '2015-09-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20150928 (CHECK (pass_time >= DATE '2015-09-28' AND pass_time < DATE '2015-10-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151001 (CHECK (pass_time >= DATE '2015-10-01' AND pass_time < DATE '2015-10-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151004 (CHECK (pass_time >= DATE '2015-10-04' AND pass_time < DATE '2015-10-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151007 (CHECK (pass_time >= DATE '2015-10-07' AND pass_time < DATE '2015-10-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151010 (CHECK (pass_time >= DATE '2015-10-10' AND pass_time < DATE '2015-10-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151013 (CHECK (pass_time >= DATE '2015-10-13' AND pass_time < DATE '2015-10-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151016 (CHECK (pass_time >= DATE '2015-10-16' AND pass_time < DATE '2015-10-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151019 (CHECK (pass_time >= DATE '2015-10-19' AND pass_time < DATE '2015-10-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151022 (CHECK (pass_time >= DATE '2015-10-22' AND pass_time < DATE '2015-10-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151025 (CHECK (pass_time >= DATE '2015-10-25' AND pass_time < DATE '2015-10-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151028 (CHECK (pass_time >= DATE '2015-10-28' AND pass_time < DATE '2015-10-31')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151031 (CHECK (pass_time >= DATE '2015-10-31' AND pass_time < DATE '2015-11-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151103 (CHECK (pass_time >= DATE '2015-11-03' AND pass_time < DATE '2015-11-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151106 (CHECK (pass_time >= DATE '2015-11-06' AND pass_time < DATE '2015-11-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151109 (CHECK (pass_time >= DATE '2015-11-09' AND pass_time < DATE '2015-11-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151112 (CHECK (pass_time >= DATE '2015-11-12' AND pass_time < DATE '2015-11-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151115 (CHECK (pass_time >= DATE '2015-11-15' AND pass_time < DATE '2015-11-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151118 (CHECK (pass_time >= DATE '2015-11-18' AND pass_time < DATE '2015-11-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151121 (CHECK (pass_time >= DATE '2015-11-21' AND pass_time < DATE '2015-11-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151124 (CHECK (pass_time >= DATE '2015-11-24' AND pass_time < DATE '2015-11-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151127 (CHECK (pass_time >= DATE '2015-11-27' AND pass_time < DATE '2015-11-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151130 (CHECK (pass_time >= DATE '2015-11-30' AND pass_time < DATE '2015-12-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151203 (CHECK (pass_time >= DATE '2015-12-03' AND pass_time < DATE '2015-12-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151206 (CHECK (pass_time >= DATE '2015-12-06' AND pass_time < DATE '2015-12-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151209 (CHECK (pass_time >= DATE '2015-12-09' AND pass_time < DATE '2015-12-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151212 (CHECK (pass_time >= DATE '2015-12-12' AND pass_time < DATE '2015-12-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151215 (CHECK (pass_time >= DATE '2015-12-15' AND pass_time < DATE '2015-12-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151218 (CHECK (pass_time >= DATE '2015-12-18' AND pass_time < DATE '2015-12-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151221 (CHECK (pass_time >= DATE '2015-12-21' AND pass_time < DATE '2015-12-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151224 (CHECK (pass_time >= DATE '2015-12-24' AND pass_time < DATE '2015-12-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151227 (CHECK (pass_time >= DATE '2015-12-27' AND pass_time < DATE '2015-12-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20151230 (CHECK (pass_time >= DATE '2015-12-30' AND pass_time < DATE '2016-01-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160102 (CHECK (pass_time >= DATE '2016-01-02' AND pass_time < DATE '2016-01-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160105 (CHECK (pass_time >= DATE '2016-01-05' AND pass_time < DATE '2016-01-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160108 (CHECK (pass_time >= DATE '2016-01-08' AND pass_time < DATE '2016-01-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160111 (CHECK (pass_time >= DATE '2016-01-11' AND pass_time < DATE '2016-01-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160114 (CHECK (pass_time >= DATE '2016-01-14' AND pass_time < DATE '2016-01-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160117 (CHECK (pass_time >= DATE '2016-01-17' AND pass_time < DATE '2016-01-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160120 (CHECK (pass_time >= DATE '2016-01-20' AND pass_time < DATE '2016-01-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160123 (CHECK (pass_time >= DATE '2016-01-23' AND pass_time < DATE '2016-01-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160126 (CHECK (pass_time >= DATE '2016-01-26' AND pass_time < DATE '2016-01-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160129 (CHECK (pass_time >= DATE '2016-01-29' AND pass_time < DATE '2016-02-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160201 (CHECK (pass_time >= DATE '2016-02-01' AND pass_time < DATE '2016-02-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160204 (CHECK (pass_time >= DATE '2016-02-04' AND pass_time < DATE '2016-02-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160207 (CHECK (pass_time >= DATE '2016-02-07' AND pass_time < DATE '2016-02-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160210 (CHECK (pass_time >= DATE '2016-02-10' AND pass_time < DATE '2016-02-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160213 (CHECK (pass_time >= DATE '2016-02-13' AND pass_time < DATE '2016-02-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160216 (CHECK (pass_time >= DATE '2016-02-16' AND pass_time < DATE '2016-02-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160219 (CHECK (pass_time >= DATE '2016-02-19' AND pass_time < DATE '2016-02-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160222 (CHECK (pass_time >= DATE '2016-02-22' AND pass_time < DATE '2016-02-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160225 (CHECK (pass_time >= DATE '2016-02-25' AND pass_time < DATE '2016-02-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160228 (CHECK (pass_time >= DATE '2016-02-28' AND pass_time < DATE '2016-03-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160302 (CHECK (pass_time >= DATE '2016-03-02' AND pass_time < DATE '2016-03-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160305 (CHECK (pass_time >= DATE '2016-03-05' AND pass_time < DATE '2016-03-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160308 (CHECK (pass_time >= DATE '2016-03-08' AND pass_time < DATE '2016-03-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160311 (CHECK (pass_time >= DATE '2016-03-11' AND pass_time < DATE '2016-03-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160314 (CHECK (pass_time >= DATE '2016-03-14' AND pass_time < DATE '2016-03-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160317 (CHECK (pass_time >= DATE '2016-03-17' AND pass_time < DATE '2016-03-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160320 (CHECK (pass_time >= DATE '2016-03-20' AND pass_time < DATE '2016-03-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160323 (CHECK (pass_time >= DATE '2016-03-23' AND pass_time < DATE '2016-03-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160326 (CHECK (pass_time >= DATE '2016-03-26' AND pass_time < DATE '2016-03-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160329 (CHECK (pass_time >= DATE '2016-03-29' AND pass_time < DATE '2016-04-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160401 (CHECK (pass_time >= DATE '2016-04-01' AND pass_time < DATE '2016-04-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160404 (CHECK (pass_time >= DATE '2016-04-04' AND pass_time < DATE '2016-04-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160407 (CHECK (pass_time >= DATE '2016-04-07' AND pass_time < DATE '2016-04-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160410 (CHECK (pass_time >= DATE '2016-04-10' AND pass_time < DATE '2016-04-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160413 (CHECK (pass_time >= DATE '2016-04-13' AND pass_time < DATE '2016-04-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160416 (CHECK (pass_time >= DATE '2016-04-16' AND pass_time < DATE '2016-04-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160419 (CHECK (pass_time >= DATE '2016-04-19' AND pass_time < DATE '2016-04-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160422 (CHECK (pass_time >= DATE '2016-04-22' AND pass_time < DATE '2016-04-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160425 (CHECK (pass_time >= DATE '2016-04-25' AND pass_time < DATE '2016-04-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160428 (CHECK (pass_time >= DATE '2016-04-28' AND pass_time < DATE '2016-05-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160501 (CHECK (pass_time >= DATE '2016-05-01' AND pass_time < DATE '2016-05-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160504 (CHECK (pass_time >= DATE '2016-05-04' AND pass_time < DATE '2016-05-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160507 (CHECK (pass_time >= DATE '2016-05-07' AND pass_time < DATE '2016-05-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160510 (CHECK (pass_time >= DATE '2016-05-10' AND pass_time < DATE '2016-05-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160513 (CHECK (pass_time >= DATE '2016-05-13' AND pass_time < DATE '2016-05-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160516 (CHECK (pass_time >= DATE '2016-05-16' AND pass_time < DATE '2016-05-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160519 (CHECK (pass_time >= DATE '2016-05-19' AND pass_time < DATE '2016-05-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160522 (CHECK (pass_time >= DATE '2016-05-22' AND pass_time < DATE '2016-05-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160525 (CHECK (pass_time >= DATE '2016-05-25' AND pass_time < DATE '2016-05-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160528 (CHECK (pass_time >= DATE '2016-05-28' AND pass_time < DATE '2016-05-31')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160531 (CHECK (pass_time >= DATE '2016-05-31' AND pass_time < DATE '2016-06-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160603 (CHECK (pass_time >= DATE '2016-06-03' AND pass_time < DATE '2016-06-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160606 (CHECK (pass_time >= DATE '2016-06-06' AND pass_time < DATE '2016-06-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160609 (CHECK (pass_time >= DATE '2016-06-09' AND pass_time < DATE '2016-06-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160612 (CHECK (pass_time >= DATE '2016-06-12' AND pass_time < DATE '2016-06-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160615 (CHECK (pass_time >= DATE '2016-06-15' AND pass_time < DATE '2016-06-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160618 (CHECK (pass_time >= DATE '2016-06-18' AND pass_time < DATE '2016-06-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160621 (CHECK (pass_time >= DATE '2016-06-21' AND pass_time < DATE '2016-06-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160624 (CHECK (pass_time >= DATE '2016-06-24' AND pass_time < DATE '2016-06-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160627 (CHECK (pass_time >= DATE '2016-06-27' AND pass_time < DATE '2016-06-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160630 (CHECK (pass_time >= DATE '2016-06-30' AND pass_time < DATE '2016-07-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160703 (CHECK (pass_time >= DATE '2016-07-03' AND pass_time < DATE '2016-07-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160706 (CHECK (pass_time >= DATE '2016-07-06' AND pass_time < DATE '2016-07-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160709 (CHECK (pass_time >= DATE '2016-07-09' AND pass_time < DATE '2016-07-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160712 (CHECK (pass_time >= DATE '2016-07-12' AND pass_time < DATE '2016-07-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160715 (CHECK (pass_time >= DATE '2016-07-15' AND pass_time < DATE '2016-07-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160718 (CHECK (pass_time >= DATE '2016-07-18' AND pass_time < DATE '2016-07-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160721 (CHECK (pass_time >= DATE '2016-07-21' AND pass_time < DATE '2016-07-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160724 (CHECK (pass_time >= DATE '2016-07-24' AND pass_time < DATE '2016-07-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160727 (CHECK (pass_time >= DATE '2016-07-27' AND pass_time < DATE '2016-07-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160730 (CHECK (pass_time >= DATE '2016-07-30' AND pass_time < DATE '2016-08-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160802 (CHECK (pass_time >= DATE '2016-08-02' AND pass_time < DATE '2016-08-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160805 (CHECK (pass_time >= DATE '2016-08-05' AND pass_time < DATE '2016-08-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160808 (CHECK (pass_time >= DATE '2016-08-08' AND pass_time < DATE '2016-08-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160811 (CHECK (pass_time >= DATE '2016-08-11' AND pass_time < DATE '2016-08-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160814 (CHECK (pass_time >= DATE '2016-08-14' AND pass_time < DATE '2016-08-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160817 (CHECK (pass_time >= DATE '2016-08-17' AND pass_time < DATE '2016-08-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160820 (CHECK (pass_time >= DATE '2016-08-20' AND pass_time < DATE '2016-08-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160823 (CHECK (pass_time >= DATE '2016-08-23' AND pass_time < DATE '2016-08-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160826 (CHECK (pass_time >= DATE '2016-08-26' AND pass_time < DATE '2016-08-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160829 (CHECK (pass_time >= DATE '2016-08-29' AND pass_time < DATE '2016-09-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160901 (CHECK (pass_time >= DATE '2016-09-01' AND pass_time < DATE '2016-09-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160904 (CHECK (pass_time >= DATE '2016-09-04' AND pass_time < DATE '2016-09-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160907 (CHECK (pass_time >= DATE '2016-09-07' AND pass_time < DATE '2016-09-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160910 (CHECK (pass_time >= DATE '2016-09-10' AND pass_time < DATE '2016-09-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160913 (CHECK (pass_time >= DATE '2016-09-13' AND pass_time < DATE '2016-09-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160916 (CHECK (pass_time >= DATE '2016-09-16' AND pass_time < DATE '2016-09-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160919 (CHECK (pass_time >= DATE '2016-09-19' AND pass_time < DATE '2016-09-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160922 (CHECK (pass_time >= DATE '2016-09-22' AND pass_time < DATE '2016-09-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160925 (CHECK (pass_time >= DATE '2016-09-25' AND pass_time < DATE '2016-09-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20160928 (CHECK (pass_time >= DATE '2016-09-28' AND pass_time < DATE '2016-10-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161001 (CHECK (pass_time >= DATE '2016-10-01' AND pass_time < DATE '2016-10-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161004 (CHECK (pass_time >= DATE '2016-10-04' AND pass_time < DATE '2016-10-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161007 (CHECK (pass_time >= DATE '2016-10-07' AND pass_time < DATE '2016-10-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161010 (CHECK (pass_time >= DATE '2016-10-10' AND pass_time < DATE '2016-10-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161013 (CHECK (pass_time >= DATE '2016-10-13' AND pass_time < DATE '2016-10-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161016 (CHECK (pass_time >= DATE '2016-10-16' AND pass_time < DATE '2016-10-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161019 (CHECK (pass_time >= DATE '2016-10-19' AND pass_time < DATE '2016-10-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161022 (CHECK (pass_time >= DATE '2016-10-22' AND pass_time < DATE '2016-10-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161025 (CHECK (pass_time >= DATE '2016-10-25' AND pass_time < DATE '2016-10-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161028 (CHECK (pass_time >= DATE '2016-10-28' AND pass_time < DATE '2016-10-31')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161031 (CHECK (pass_time >= DATE '2016-10-31' AND pass_time < DATE '2016-11-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161103 (CHECK (pass_time >= DATE '2016-11-03' AND pass_time < DATE '2016-11-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161106 (CHECK (pass_time >= DATE '2016-11-06' AND pass_time < DATE '2016-11-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161109 (CHECK (pass_time >= DATE '2016-11-09' AND pass_time < DATE '2016-11-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161112 (CHECK (pass_time >= DATE '2016-11-12' AND pass_time < DATE '2016-11-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161115 (CHECK (pass_time >= DATE '2016-11-15' AND pass_time < DATE '2016-11-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161118 (CHECK (pass_time >= DATE '2016-11-18' AND pass_time < DATE '2016-11-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161121 (CHECK (pass_time >= DATE '2016-11-21' AND pass_time < DATE '2016-11-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161124 (CHECK (pass_time >= DATE '2016-11-24' AND pass_time < DATE '2016-11-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161127 (CHECK (pass_time >= DATE '2016-11-27' AND pass_time < DATE '2016-11-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161130 (CHECK (pass_time >= DATE '2016-11-30' AND pass_time < DATE '2016-12-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161203 (CHECK (pass_time >= DATE '2016-12-03' AND pass_time < DATE '2016-12-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161206 (CHECK (pass_time >= DATE '2016-12-06' AND pass_time < DATE '2016-12-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161209 (CHECK (pass_time >= DATE '2016-12-09' AND pass_time < DATE '2016-12-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161212 (CHECK (pass_time >= DATE '2016-12-12' AND pass_time < DATE '2016-12-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161215 (CHECK (pass_time >= DATE '2016-12-15' AND pass_time < DATE '2016-12-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161218 (CHECK (pass_time >= DATE '2016-12-18' AND pass_time < DATE '2016-12-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161221 (CHECK (pass_time >= DATE '2016-12-21' AND pass_time < DATE '2016-12-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161224 (CHECK (pass_time >= DATE '2016-12-24' AND pass_time < DATE '2016-12-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161227 (CHECK (pass_time >= DATE '2016-12-27' AND pass_time < DATE '2016-12-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20161230 (CHECK (pass_time >= DATE '2016-12-30' AND pass_time < DATE '2017-01-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170102 (CHECK (pass_time >= DATE '2017-01-02' AND pass_time < DATE '2017-01-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170105 (CHECK (pass_time >= DATE '2017-01-05' AND pass_time < DATE '2017-01-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170108 (CHECK (pass_time >= DATE '2017-01-08' AND pass_time < DATE '2017-01-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170111 (CHECK (pass_time >= DATE '2017-01-11' AND pass_time < DATE '2017-01-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170114 (CHECK (pass_time >= DATE '2017-01-14' AND pass_time < DATE '2017-01-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170117 (CHECK (pass_time >= DATE '2017-01-17' AND pass_time < DATE '2017-01-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170120 (CHECK (pass_time >= DATE '2017-01-20' AND pass_time < DATE '2017-01-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170123 (CHECK (pass_time >= DATE '2017-01-23' AND pass_time < DATE '2017-01-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170126 (CHECK (pass_time >= DATE '2017-01-26' AND pass_time < DATE '2017-01-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170129 (CHECK (pass_time >= DATE '2017-01-29' AND pass_time < DATE '2017-02-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170201 (CHECK (pass_time >= DATE '2017-02-01' AND pass_time < DATE '2017-02-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170204 (CHECK (pass_time >= DATE '2017-02-04' AND pass_time < DATE '2017-02-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170207 (CHECK (pass_time >= DATE '2017-02-07' AND pass_time < DATE '2017-02-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170210 (CHECK (pass_time >= DATE '2017-02-10' AND pass_time < DATE '2017-02-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170213 (CHECK (pass_time >= DATE '2017-02-13' AND pass_time < DATE '2017-02-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170216 (CHECK (pass_time >= DATE '2017-02-16' AND pass_time < DATE '2017-02-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170219 (CHECK (pass_time >= DATE '2017-02-19' AND pass_time < DATE '2017-02-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170222 (CHECK (pass_time >= DATE '2017-02-22' AND pass_time < DATE '2017-02-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170225 (CHECK (pass_time >= DATE '2017-02-25' AND pass_time < DATE '2017-02-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170228 (CHECK (pass_time >= DATE '2017-02-28' AND pass_time < DATE '2017-03-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170303 (CHECK (pass_time >= DATE '2017-03-03' AND pass_time < DATE '2017-03-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170306 (CHECK (pass_time >= DATE '2017-03-06' AND pass_time < DATE '2017-03-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170309 (CHECK (pass_time >= DATE '2017-03-09' AND pass_time < DATE '2017-03-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170312 (CHECK (pass_time >= DATE '2017-03-12' AND pass_time < DATE '2017-03-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170315 (CHECK (pass_time >= DATE '2017-03-15' AND pass_time < DATE '2017-03-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170318 (CHECK (pass_time >= DATE '2017-03-18' AND pass_time < DATE '2017-03-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170321 (CHECK (pass_time >= DATE '2017-03-21' AND pass_time < DATE '2017-03-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170324 (CHECK (pass_time >= DATE '2017-03-24' AND pass_time < DATE '2017-03-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170327 (CHECK (pass_time >= DATE '2017-03-27' AND pass_time < DATE '2017-03-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170330 (CHECK (pass_time >= DATE '2017-03-30' AND pass_time < DATE '2017-04-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170402 (CHECK (pass_time >= DATE '2017-04-02' AND pass_time < DATE '2017-04-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170405 (CHECK (pass_time >= DATE '2017-04-05' AND pass_time < DATE '2017-04-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170408 (CHECK (pass_time >= DATE '2017-04-08' AND pass_time < DATE '2017-04-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170411 (CHECK (pass_time >= DATE '2017-04-11' AND pass_time < DATE '2017-04-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170414 (CHECK (pass_time >= DATE '2017-04-14' AND pass_time < DATE '2017-04-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170417 (CHECK (pass_time >= DATE '2017-04-17' AND pass_time < DATE '2017-04-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170420 (CHECK (pass_time >= DATE '2017-04-20' AND pass_time < DATE '2017-04-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170423 (CHECK (pass_time >= DATE '2017-04-23' AND pass_time < DATE '2017-04-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170426 (CHECK (pass_time >= DATE '2017-04-26' AND pass_time < DATE '2017-04-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170429 (CHECK (pass_time >= DATE '2017-04-29' AND pass_time < DATE '2017-05-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170502 (CHECK (pass_time >= DATE '2017-05-02' AND pass_time < DATE '2017-05-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170505 (CHECK (pass_time >= DATE '2017-05-05' AND pass_time < DATE '2017-05-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170508 (CHECK (pass_time >= DATE '2017-05-08' AND pass_time < DATE '2017-05-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170511 (CHECK (pass_time >= DATE '2017-05-11' AND pass_time < DATE '2017-05-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170514 (CHECK (pass_time >= DATE '2017-05-14' AND pass_time < DATE '2017-05-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170517 (CHECK (pass_time >= DATE '2017-05-17' AND pass_time < DATE '2017-05-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170520 (CHECK (pass_time >= DATE '2017-05-20' AND pass_time < DATE '2017-05-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170523 (CHECK (pass_time >= DATE '2017-05-23' AND pass_time < DATE '2017-05-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170526 (CHECK (pass_time >= DATE '2017-05-26' AND pass_time < DATE '2017-05-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170529 (CHECK (pass_time >= DATE '2017-05-29' AND pass_time < DATE '2017-06-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170601 (CHECK (pass_time >= DATE '2017-06-01' AND pass_time < DATE '2017-06-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170604 (CHECK (pass_time >= DATE '2017-06-04' AND pass_time < DATE '2017-06-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170607 (CHECK (pass_time >= DATE '2017-06-07' AND pass_time < DATE '2017-06-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170610 (CHECK (pass_time >= DATE '2017-06-10' AND pass_time < DATE '2017-06-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170613 (CHECK (pass_time >= DATE '2017-06-13' AND pass_time < DATE '2017-06-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170616 (CHECK (pass_time >= DATE '2017-06-16' AND pass_time < DATE '2017-06-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170619 (CHECK (pass_time >= DATE '2017-06-19' AND pass_time < DATE '2017-06-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170622 (CHECK (pass_time >= DATE '2017-06-22' AND pass_time < DATE '2017-06-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170625 (CHECK (pass_time >= DATE '2017-06-25' AND pass_time < DATE '2017-06-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170628 (CHECK (pass_time >= DATE '2017-06-28' AND pass_time < DATE '2017-07-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170701 (CHECK (pass_time >= DATE '2017-07-01' AND pass_time < DATE '2017-07-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170704 (CHECK (pass_time >= DATE '2017-07-04' AND pass_time < DATE '2017-07-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170707 (CHECK (pass_time >= DATE '2017-07-07' AND pass_time < DATE '2017-07-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170710 (CHECK (pass_time >= DATE '2017-07-10' AND pass_time < DATE '2017-07-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170713 (CHECK (pass_time >= DATE '2017-07-13' AND pass_time < DATE '2017-07-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170716 (CHECK (pass_time >= DATE '2017-07-16' AND pass_time < DATE '2017-07-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170719 (CHECK (pass_time >= DATE '2017-07-19' AND pass_time < DATE '2017-07-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170722 (CHECK (pass_time >= DATE '2017-07-22' AND pass_time < DATE '2017-07-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170725 (CHECK (pass_time >= DATE '2017-07-25' AND pass_time < DATE '2017-07-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170728 (CHECK (pass_time >= DATE '2017-07-28' AND pass_time < DATE '2017-07-31')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170731 (CHECK (pass_time >= DATE '2017-07-31' AND pass_time < DATE '2017-08-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170803 (CHECK (pass_time >= DATE '2017-08-03' AND pass_time < DATE '2017-08-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170806 (CHECK (pass_time >= DATE '2017-08-06' AND pass_time < DATE '2017-08-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170809 (CHECK (pass_time >= DATE '2017-08-09' AND pass_time < DATE '2017-08-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170812 (CHECK (pass_time >= DATE '2017-08-12' AND pass_time < DATE '2017-08-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170815 (CHECK (pass_time >= DATE '2017-08-15' AND pass_time < DATE '2017-08-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170818 (CHECK (pass_time >= DATE '2017-08-18' AND pass_time < DATE '2017-08-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170821 (CHECK (pass_time >= DATE '2017-08-21' AND pass_time < DATE '2017-08-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170824 (CHECK (pass_time >= DATE '2017-08-24' AND pass_time < DATE '2017-08-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170827 (CHECK (pass_time >= DATE '2017-08-27' AND pass_time < DATE '2017-08-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170830 (CHECK (pass_time >= DATE '2017-08-30' AND pass_time < DATE '2017-09-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170902 (CHECK (pass_time >= DATE '2017-09-02' AND pass_time < DATE '2017-09-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170905 (CHECK (pass_time >= DATE '2017-09-05' AND pass_time < DATE '2017-09-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170908 (CHECK (pass_time >= DATE '2017-09-08' AND pass_time < DATE '2017-09-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170911 (CHECK (pass_time >= DATE '2017-09-11' AND pass_time < DATE '2017-09-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170914 (CHECK (pass_time >= DATE '2017-09-14' AND pass_time < DATE '2017-09-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170917 (CHECK (pass_time >= DATE '2017-09-17' AND pass_time < DATE '2017-09-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170920 (CHECK (pass_time >= DATE '2017-09-20' AND pass_time < DATE '2017-09-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170923 (CHECK (pass_time >= DATE '2017-09-23' AND pass_time < DATE '2017-09-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170926 (CHECK (pass_time >= DATE '2017-09-26' AND pass_time < DATE '2017-09-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20170929 (CHECK (pass_time >= DATE '2017-09-29' AND pass_time < DATE '2017-10-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171002 (CHECK (pass_time >= DATE '2017-10-02' AND pass_time < DATE '2017-10-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171005 (CHECK (pass_time >= DATE '2017-10-05' AND pass_time < DATE '2017-10-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171008 (CHECK (pass_time >= DATE '2017-10-08' AND pass_time < DATE '2017-10-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171011 (CHECK (pass_time >= DATE '2017-10-11' AND pass_time < DATE '2017-10-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171014 (CHECK (pass_time >= DATE '2017-10-14' AND pass_time < DATE '2017-10-17')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171017 (CHECK (pass_time >= DATE '2017-10-17' AND pass_time < DATE '2017-10-20')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171020 (CHECK (pass_time >= DATE '2017-10-20' AND pass_time < DATE '2017-10-23')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171023 (CHECK (pass_time >= DATE '2017-10-23' AND pass_time < DATE '2017-10-26')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171026 (CHECK (pass_time >= DATE '2017-10-26' AND pass_time < DATE '2017-10-29')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171029 (CHECK (pass_time >= DATE '2017-10-29' AND pass_time < DATE '2017-11-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171101 (CHECK (pass_time >= DATE '2017-11-01' AND pass_time < DATE '2017-11-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171104 (CHECK (pass_time >= DATE '2017-11-04' AND pass_time < DATE '2017-11-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171107 (CHECK (pass_time >= DATE '2017-11-07' AND pass_time < DATE '2017-11-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171110 (CHECK (pass_time >= DATE '2017-11-10' AND pass_time < DATE '2017-11-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171113 (CHECK (pass_time >= DATE '2017-11-13' AND pass_time < DATE '2017-11-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171116 (CHECK (pass_time >= DATE '2017-11-16' AND pass_time < DATE '2017-11-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171119 (CHECK (pass_time >= DATE '2017-11-19' AND pass_time < DATE '2017-11-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171122 (CHECK (pass_time >= DATE '2017-11-22' AND pass_time < DATE '2017-11-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171125 (CHECK (pass_time >= DATE '2017-11-25' AND pass_time < DATE '2017-11-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171128 (CHECK (pass_time >= DATE '2017-11-28' AND pass_time < DATE '2017-12-01')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171201 (CHECK (pass_time >= DATE '2017-12-01' AND pass_time < DATE '2017-12-04')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171204 (CHECK (pass_time >= DATE '2017-12-04' AND pass_time < DATE '2017-12-07')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171207 (CHECK (pass_time >= DATE '2017-12-07' AND pass_time < DATE '2017-12-10')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171210 (CHECK (pass_time >= DATE '2017-12-10' AND pass_time < DATE '2017-12-13')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171213 (CHECK (pass_time >= DATE '2017-12-13' AND pass_time < DATE '2017-12-16')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171216 (CHECK (pass_time >= DATE '2017-12-16' AND pass_time < DATE '2017-12-19')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171219 (CHECK (pass_time >= DATE '2017-12-19' AND pass_time < DATE '2017-12-22')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171222 (CHECK (pass_time >= DATE '2017-12-22' AND pass_time < DATE '2017-12-25')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171225 (CHECK (pass_time >= DATE '2017-12-25' AND pass_time < DATE '2017-12-28')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171228 (CHECK (pass_time >= DATE '2017-12-28' AND pass_time < DATE '2017-12-31')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20171231 (CHECK (pass_time >= DATE '2017-12-31' AND pass_time < DATE '2018-01-03')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180103 (CHECK (pass_time >= DATE '2018-01-03' AND pass_time < DATE '2018-01-06')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180106 (CHECK (pass_time >= DATE '2018-01-06' AND pass_time < DATE '2018-01-09')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180109 (CHECK (pass_time >= DATE '2018-01-09' AND pass_time < DATE '2018-01-12')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180112 (CHECK (pass_time >= DATE '2018-01-12' AND pass_time < DATE '2018-01-15')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180115 (CHECK (pass_time >= DATE '2018-01-15' AND pass_time < DATE '2018-01-18')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180118 (CHECK (pass_time >= DATE '2018-01-18' AND pass_time < DATE '2018-01-21')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180121 (CHECK (pass_time >= DATE '2018-01-21' AND pass_time < DATE '2018-01-24')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180124 (CHECK (pass_time >= DATE '2018-01-24' AND pass_time < DATE '2018-01-27')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180127 (CHECK (pass_time >= DATE '2018-01-27' AND pass_time < DATE '2018-01-30')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180130 (CHECK (pass_time >= DATE '2018-01-30' AND pass_time < DATE '2018-02-02')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180202 (CHECK (pass_time >= DATE '2018-02-02' AND pass_time < DATE '2018-02-05')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180205 (CHECK (pass_time >= DATE '2018-02-05' AND pass_time < DATE '2018-02-08')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180208 (CHECK (pass_time >= DATE '2018-02-08' AND pass_time < DATE '2018-02-11')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180211 (CHECK (pass_time >= DATE '2018-02-11' AND pass_time < DATE '2018-02-14')) INHERITS (traffic_vehicle_pass);
+CREATE TABLE traffic_vehicle_pass_20180214 (CHECK (pass_time >= DATE '2018-02-14' AND pass_time < DATE '2018-02-17')) INHERITS (traffic_vehicle_pass);
+
+CREATE INDEX traffic_vehicle_pass_20150901_pass_time ON traffic_vehicle_pass_20150901 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150904_pass_time ON traffic_vehicle_pass_20150904 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150907_pass_time ON traffic_vehicle_pass_20150907 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150910_pass_time ON traffic_vehicle_pass_20150910 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150913_pass_time ON traffic_vehicle_pass_20150913 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150916_pass_time ON traffic_vehicle_pass_20150916 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150919_pass_time ON traffic_vehicle_pass_20150919 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150922_pass_time ON traffic_vehicle_pass_20150922 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150925_pass_time ON traffic_vehicle_pass_20150925 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20150928_pass_time ON traffic_vehicle_pass_20150928 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151001_pass_time ON traffic_vehicle_pass_20151001 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151004_pass_time ON traffic_vehicle_pass_20151004 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151007_pass_time ON traffic_vehicle_pass_20151007 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151010_pass_time ON traffic_vehicle_pass_20151010 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151013_pass_time ON traffic_vehicle_pass_20151013 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151016_pass_time ON traffic_vehicle_pass_20151016 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151019_pass_time ON traffic_vehicle_pass_20151019 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151022_pass_time ON traffic_vehicle_pass_20151022 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151025_pass_time ON traffic_vehicle_pass_20151025 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151028_pass_time ON traffic_vehicle_pass_20151028 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151031_pass_time ON traffic_vehicle_pass_20151031 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151103_pass_time ON traffic_vehicle_pass_20151103 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151106_pass_time ON traffic_vehicle_pass_20151106 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151109_pass_time ON traffic_vehicle_pass_20151109 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151112_pass_time ON traffic_vehicle_pass_20151112 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151115_pass_time ON traffic_vehicle_pass_20151115 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151118_pass_time ON traffic_vehicle_pass_20151118 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151121_pass_time ON traffic_vehicle_pass_20151121 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151124_pass_time ON traffic_vehicle_pass_20151124 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151127_pass_time ON traffic_vehicle_pass_20151127 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151130_pass_time ON traffic_vehicle_pass_20151130 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151203_pass_time ON traffic_vehicle_pass_20151203 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151206_pass_time ON traffic_vehicle_pass_20151206 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151209_pass_time ON traffic_vehicle_pass_20151209 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151212_pass_time ON traffic_vehicle_pass_20151212 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151215_pass_time ON traffic_vehicle_pass_20151215 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151218_pass_time ON traffic_vehicle_pass_20151218 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151221_pass_time ON traffic_vehicle_pass_20151221 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151224_pass_time ON traffic_vehicle_pass_20151224 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151227_pass_time ON traffic_vehicle_pass_20151227 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20151230_pass_time ON traffic_vehicle_pass_20151230 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160102_pass_time ON traffic_vehicle_pass_20160102 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160105_pass_time ON traffic_vehicle_pass_20160105 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160108_pass_time ON traffic_vehicle_pass_20160108 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160111_pass_time ON traffic_vehicle_pass_20160111 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160114_pass_time ON traffic_vehicle_pass_20160114 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160117_pass_time ON traffic_vehicle_pass_20160117 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160120_pass_time ON traffic_vehicle_pass_20160120 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160123_pass_time ON traffic_vehicle_pass_20160123 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160126_pass_time ON traffic_vehicle_pass_20160126 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160129_pass_time ON traffic_vehicle_pass_20160129 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160201_pass_time ON traffic_vehicle_pass_20160201 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160204_pass_time ON traffic_vehicle_pass_20160204 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160207_pass_time ON traffic_vehicle_pass_20160207 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160210_pass_time ON traffic_vehicle_pass_20160210 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160213_pass_time ON traffic_vehicle_pass_20160213 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160216_pass_time ON traffic_vehicle_pass_20160216 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160219_pass_time ON traffic_vehicle_pass_20160219 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160222_pass_time ON traffic_vehicle_pass_20160222 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160225_pass_time ON traffic_vehicle_pass_20160225 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160228_pass_time ON traffic_vehicle_pass_20160228 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160302_pass_time ON traffic_vehicle_pass_20160302 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160305_pass_time ON traffic_vehicle_pass_20160305 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160308_pass_time ON traffic_vehicle_pass_20160308 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160311_pass_time ON traffic_vehicle_pass_20160311 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160314_pass_time ON traffic_vehicle_pass_20160314 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160317_pass_time ON traffic_vehicle_pass_20160317 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160320_pass_time ON traffic_vehicle_pass_20160320 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160323_pass_time ON traffic_vehicle_pass_20160323 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160326_pass_time ON traffic_vehicle_pass_20160326 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160329_pass_time ON traffic_vehicle_pass_20160329 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160401_pass_time ON traffic_vehicle_pass_20160401 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160404_pass_time ON traffic_vehicle_pass_20160404 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160407_pass_time ON traffic_vehicle_pass_20160407 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160410_pass_time ON traffic_vehicle_pass_20160410 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160413_pass_time ON traffic_vehicle_pass_20160413 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160416_pass_time ON traffic_vehicle_pass_20160416 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160419_pass_time ON traffic_vehicle_pass_20160419 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160422_pass_time ON traffic_vehicle_pass_20160422 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160425_pass_time ON traffic_vehicle_pass_20160425 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160428_pass_time ON traffic_vehicle_pass_20160428 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160501_pass_time ON traffic_vehicle_pass_20160501 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160504_pass_time ON traffic_vehicle_pass_20160504 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160507_pass_time ON traffic_vehicle_pass_20160507 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160510_pass_time ON traffic_vehicle_pass_20160510 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160513_pass_time ON traffic_vehicle_pass_20160513 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160516_pass_time ON traffic_vehicle_pass_20160516 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160519_pass_time ON traffic_vehicle_pass_20160519 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160522_pass_time ON traffic_vehicle_pass_20160522 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160525_pass_time ON traffic_vehicle_pass_20160525 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160528_pass_time ON traffic_vehicle_pass_20160528 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160531_pass_time ON traffic_vehicle_pass_20160531 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160603_pass_time ON traffic_vehicle_pass_20160603 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160606_pass_time ON traffic_vehicle_pass_20160606 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160609_pass_time ON traffic_vehicle_pass_20160609 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160612_pass_time ON traffic_vehicle_pass_20160612 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160615_pass_time ON traffic_vehicle_pass_20160615 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160618_pass_time ON traffic_vehicle_pass_20160618 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160621_pass_time ON traffic_vehicle_pass_20160621 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160624_pass_time ON traffic_vehicle_pass_20160624 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160627_pass_time ON traffic_vehicle_pass_20160627 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160630_pass_time ON traffic_vehicle_pass_20160630 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160703_pass_time ON traffic_vehicle_pass_20160703 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160706_pass_time ON traffic_vehicle_pass_20160706 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160709_pass_time ON traffic_vehicle_pass_20160709 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160712_pass_time ON traffic_vehicle_pass_20160712 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160715_pass_time ON traffic_vehicle_pass_20160715 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160718_pass_time ON traffic_vehicle_pass_20160718 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160721_pass_time ON traffic_vehicle_pass_20160721 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160724_pass_time ON traffic_vehicle_pass_20160724 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160727_pass_time ON traffic_vehicle_pass_20160727 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160730_pass_time ON traffic_vehicle_pass_20160730 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160802_pass_time ON traffic_vehicle_pass_20160802 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160805_pass_time ON traffic_vehicle_pass_20160805 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160808_pass_time ON traffic_vehicle_pass_20160808 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160811_pass_time ON traffic_vehicle_pass_20160811 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160814_pass_time ON traffic_vehicle_pass_20160814 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160817_pass_time ON traffic_vehicle_pass_20160817 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160820_pass_time ON traffic_vehicle_pass_20160820 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160823_pass_time ON traffic_vehicle_pass_20160823 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160826_pass_time ON traffic_vehicle_pass_20160826 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160829_pass_time ON traffic_vehicle_pass_20160829 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160901_pass_time ON traffic_vehicle_pass_20160901 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160904_pass_time ON traffic_vehicle_pass_20160904 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160907_pass_time ON traffic_vehicle_pass_20160907 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160910_pass_time ON traffic_vehicle_pass_20160910 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160913_pass_time ON traffic_vehicle_pass_20160913 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160916_pass_time ON traffic_vehicle_pass_20160916 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160919_pass_time ON traffic_vehicle_pass_20160919 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160922_pass_time ON traffic_vehicle_pass_20160922 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160925_pass_time ON traffic_vehicle_pass_20160925 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20160928_pass_time ON traffic_vehicle_pass_20160928 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161001_pass_time ON traffic_vehicle_pass_20161001 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161004_pass_time ON traffic_vehicle_pass_20161004 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161007_pass_time ON traffic_vehicle_pass_20161007 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161010_pass_time ON traffic_vehicle_pass_20161010 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161013_pass_time ON traffic_vehicle_pass_20161013 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161016_pass_time ON traffic_vehicle_pass_20161016 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161019_pass_time ON traffic_vehicle_pass_20161019 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161022_pass_time ON traffic_vehicle_pass_20161022 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161025_pass_time ON traffic_vehicle_pass_20161025 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161028_pass_time ON traffic_vehicle_pass_20161028 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161031_pass_time ON traffic_vehicle_pass_20161031 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161103_pass_time ON traffic_vehicle_pass_20161103 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161106_pass_time ON traffic_vehicle_pass_20161106 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161109_pass_time ON traffic_vehicle_pass_20161109 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161112_pass_time ON traffic_vehicle_pass_20161112 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161115_pass_time ON traffic_vehicle_pass_20161115 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161118_pass_time ON traffic_vehicle_pass_20161118 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161121_pass_time ON traffic_vehicle_pass_20161121 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161124_pass_time ON traffic_vehicle_pass_20161124 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161127_pass_time ON traffic_vehicle_pass_20161127 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161130_pass_time ON traffic_vehicle_pass_20161130 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161203_pass_time ON traffic_vehicle_pass_20161203 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161206_pass_time ON traffic_vehicle_pass_20161206 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161209_pass_time ON traffic_vehicle_pass_20161209 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161212_pass_time ON traffic_vehicle_pass_20161212 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161215_pass_time ON traffic_vehicle_pass_20161215 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161218_pass_time ON traffic_vehicle_pass_20161218 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161221_pass_time ON traffic_vehicle_pass_20161221 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161224_pass_time ON traffic_vehicle_pass_20161224 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161227_pass_time ON traffic_vehicle_pass_20161227 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20161230_pass_time ON traffic_vehicle_pass_20161230 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170102_pass_time ON traffic_vehicle_pass_20170102 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170105_pass_time ON traffic_vehicle_pass_20170105 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170108_pass_time ON traffic_vehicle_pass_20170108 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170111_pass_time ON traffic_vehicle_pass_20170111 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170114_pass_time ON traffic_vehicle_pass_20170114 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170117_pass_time ON traffic_vehicle_pass_20170117 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170120_pass_time ON traffic_vehicle_pass_20170120 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170123_pass_time ON traffic_vehicle_pass_20170123 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170126_pass_time ON traffic_vehicle_pass_20170126 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170129_pass_time ON traffic_vehicle_pass_20170129 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170201_pass_time ON traffic_vehicle_pass_20170201 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170204_pass_time ON traffic_vehicle_pass_20170204 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170207_pass_time ON traffic_vehicle_pass_20170207 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170210_pass_time ON traffic_vehicle_pass_20170210 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170213_pass_time ON traffic_vehicle_pass_20170213 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170216_pass_time ON traffic_vehicle_pass_20170216 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170219_pass_time ON traffic_vehicle_pass_20170219 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170222_pass_time ON traffic_vehicle_pass_20170222 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170225_pass_time ON traffic_vehicle_pass_20170225 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170228_pass_time ON traffic_vehicle_pass_20170228 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170303_pass_time ON traffic_vehicle_pass_20170303 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170306_pass_time ON traffic_vehicle_pass_20170306 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170309_pass_time ON traffic_vehicle_pass_20170309 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170312_pass_time ON traffic_vehicle_pass_20170312 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170315_pass_time ON traffic_vehicle_pass_20170315 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170318_pass_time ON traffic_vehicle_pass_20170318 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170321_pass_time ON traffic_vehicle_pass_20170321 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170324_pass_time ON traffic_vehicle_pass_20170324 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170327_pass_time ON traffic_vehicle_pass_20170327 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170330_pass_time ON traffic_vehicle_pass_20170330 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170402_pass_time ON traffic_vehicle_pass_20170402 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170405_pass_time ON traffic_vehicle_pass_20170405 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170408_pass_time ON traffic_vehicle_pass_20170408 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170411_pass_time ON traffic_vehicle_pass_20170411 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170414_pass_time ON traffic_vehicle_pass_20170414 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170417_pass_time ON traffic_vehicle_pass_20170417 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170420_pass_time ON traffic_vehicle_pass_20170420 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170423_pass_time ON traffic_vehicle_pass_20170423 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170426_pass_time ON traffic_vehicle_pass_20170426 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170429_pass_time ON traffic_vehicle_pass_20170429 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170502_pass_time ON traffic_vehicle_pass_20170502 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170505_pass_time ON traffic_vehicle_pass_20170505 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170508_pass_time ON traffic_vehicle_pass_20170508 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170511_pass_time ON traffic_vehicle_pass_20170511 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170514_pass_time ON traffic_vehicle_pass_20170514 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170517_pass_time ON traffic_vehicle_pass_20170517 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170520_pass_time ON traffic_vehicle_pass_20170520 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170523_pass_time ON traffic_vehicle_pass_20170523 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170526_pass_time ON traffic_vehicle_pass_20170526 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170529_pass_time ON traffic_vehicle_pass_20170529 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170601_pass_time ON traffic_vehicle_pass_20170601 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170604_pass_time ON traffic_vehicle_pass_20170604 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170607_pass_time ON traffic_vehicle_pass_20170607 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170610_pass_time ON traffic_vehicle_pass_20170610 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170613_pass_time ON traffic_vehicle_pass_20170613 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170616_pass_time ON traffic_vehicle_pass_20170616 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170619_pass_time ON traffic_vehicle_pass_20170619 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170622_pass_time ON traffic_vehicle_pass_20170622 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170625_pass_time ON traffic_vehicle_pass_20170625 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170628_pass_time ON traffic_vehicle_pass_20170628 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170701_pass_time ON traffic_vehicle_pass_20170701 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170704_pass_time ON traffic_vehicle_pass_20170704 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170707_pass_time ON traffic_vehicle_pass_20170707 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170710_pass_time ON traffic_vehicle_pass_20170710 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170713_pass_time ON traffic_vehicle_pass_20170713 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170716_pass_time ON traffic_vehicle_pass_20170716 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170719_pass_time ON traffic_vehicle_pass_20170719 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170722_pass_time ON traffic_vehicle_pass_20170722 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170725_pass_time ON traffic_vehicle_pass_20170725 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170728_pass_time ON traffic_vehicle_pass_20170728 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170731_pass_time ON traffic_vehicle_pass_20170731 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170803_pass_time ON traffic_vehicle_pass_20170803 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170806_pass_time ON traffic_vehicle_pass_20170806 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170809_pass_time ON traffic_vehicle_pass_20170809 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170812_pass_time ON traffic_vehicle_pass_20170812 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170815_pass_time ON traffic_vehicle_pass_20170815 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170818_pass_time ON traffic_vehicle_pass_20170818 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170821_pass_time ON traffic_vehicle_pass_20170821 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170824_pass_time ON traffic_vehicle_pass_20170824 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170827_pass_time ON traffic_vehicle_pass_20170827 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170830_pass_time ON traffic_vehicle_pass_20170830 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170902_pass_time ON traffic_vehicle_pass_20170902 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170905_pass_time ON traffic_vehicle_pass_20170905 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170908_pass_time ON traffic_vehicle_pass_20170908 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170911_pass_time ON traffic_vehicle_pass_20170911 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170914_pass_time ON traffic_vehicle_pass_20170914 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170917_pass_time ON traffic_vehicle_pass_20170917 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170920_pass_time ON traffic_vehicle_pass_20170920 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170923_pass_time ON traffic_vehicle_pass_20170923 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170926_pass_time ON traffic_vehicle_pass_20170926 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20170929_pass_time ON traffic_vehicle_pass_20170929 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171002_pass_time ON traffic_vehicle_pass_20171002 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171005_pass_time ON traffic_vehicle_pass_20171005 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171008_pass_time ON traffic_vehicle_pass_20171008 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171011_pass_time ON traffic_vehicle_pass_20171011 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171014_pass_time ON traffic_vehicle_pass_20171014 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171017_pass_time ON traffic_vehicle_pass_20171017 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171020_pass_time ON traffic_vehicle_pass_20171020 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171023_pass_time ON traffic_vehicle_pass_20171023 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171026_pass_time ON traffic_vehicle_pass_20171026 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171029_pass_time ON traffic_vehicle_pass_20171029 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171101_pass_time ON traffic_vehicle_pass_20171101 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171104_pass_time ON traffic_vehicle_pass_20171104 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171107_pass_time ON traffic_vehicle_pass_20171107 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171110_pass_time ON traffic_vehicle_pass_20171110 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171113_pass_time ON traffic_vehicle_pass_20171113 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171116_pass_time ON traffic_vehicle_pass_20171116 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171119_pass_time ON traffic_vehicle_pass_20171119 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171122_pass_time ON traffic_vehicle_pass_20171122 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171125_pass_time ON traffic_vehicle_pass_20171125 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171128_pass_time ON traffic_vehicle_pass_20171128 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171201_pass_time ON traffic_vehicle_pass_20171201 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171204_pass_time ON traffic_vehicle_pass_20171204 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171207_pass_time ON traffic_vehicle_pass_20171207 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171210_pass_time ON traffic_vehicle_pass_20171210 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171213_pass_time ON traffic_vehicle_pass_20171213 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171216_pass_time ON traffic_vehicle_pass_20171216 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171219_pass_time ON traffic_vehicle_pass_20171219 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171222_pass_time ON traffic_vehicle_pass_20171222 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171225_pass_time ON traffic_vehicle_pass_20171225 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171228_pass_time ON traffic_vehicle_pass_20171228 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20171231_pass_time ON traffic_vehicle_pass_20171231 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180103_pass_time ON traffic_vehicle_pass_20180103 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180106_pass_time ON traffic_vehicle_pass_20180106 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180109_pass_time ON traffic_vehicle_pass_20180109 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180112_pass_time ON traffic_vehicle_pass_20180112 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180115_pass_time ON traffic_vehicle_pass_20180115 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180118_pass_time ON traffic_vehicle_pass_20180118 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180121_pass_time ON traffic_vehicle_pass_20180121 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180124_pass_time ON traffic_vehicle_pass_20180124 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180127_pass_time ON traffic_vehicle_pass_20180127 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180130_pass_time ON traffic_vehicle_pass_20180130 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180202_pass_time ON traffic_vehicle_pass_20180202 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180205_pass_time ON traffic_vehicle_pass_20180205 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180208_pass_time ON traffic_vehicle_pass_20180208 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180211_pass_time ON traffic_vehicle_pass_20180211 (pass_time);
+CREATE INDEX traffic_vehicle_pass_20180214_pass_time ON traffic_vehicle_pass_20180214 (pass_time);
+
+
+CREATE OR REPLACE FUNCTION traffic_vehicle_pass_insert_trigger()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF ( NEW.pass_time >= DATE '2015-09-01') AND
+         NEW.pass_time < DATE '2015-09-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150901 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-04') AND
+         NEW.pass_time < DATE '2015-09-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150904 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-07') AND
+         NEW.pass_time < DATE '2015-09-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150907 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-10') AND
+         NEW.pass_time < DATE '2015-09-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150910 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-13') AND
+         NEW.pass_time < DATE '2015-09-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150913 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-16') AND
+         NEW.pass_time < DATE '2015-09-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150916 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-19') AND
+         NEW.pass_time < DATE '2015-09-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150919 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-22') AND
+         NEW.pass_time < DATE '2015-09-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150922 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-25') AND
+         NEW.pass_time < DATE '2015-09-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150925 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-09-28') AND
+         NEW.pass_time < DATE '2015-10-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20150928 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-01') AND
+         NEW.pass_time < DATE '2015-10-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151001 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-04') AND
+         NEW.pass_time < DATE '2015-10-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151004 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-07') AND
+         NEW.pass_time < DATE '2015-10-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151007 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-10') AND
+         NEW.pass_time < DATE '2015-10-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151010 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-13') AND
+         NEW.pass_time < DATE '2015-10-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151013 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-16') AND
+         NEW.pass_time < DATE '2015-10-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151016 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-19') AND
+         NEW.pass_time < DATE '2015-10-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151019 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-22') AND
+         NEW.pass_time < DATE '2015-10-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151022 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-25') AND
+         NEW.pass_time < DATE '2015-10-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151025 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-28') AND
+         NEW.pass_time < DATE '2015-10-31' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151028 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-10-31') AND
+         NEW.pass_time < DATE '2015-11-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151031 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-03') AND
+         NEW.pass_time < DATE '2015-11-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151103 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-06') AND
+         NEW.pass_time < DATE '2015-11-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151106 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-09') AND
+         NEW.pass_time < DATE '2015-11-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151109 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-12') AND
+         NEW.pass_time < DATE '2015-11-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151112 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-15') AND
+         NEW.pass_time < DATE '2015-11-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151115 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-18') AND
+         NEW.pass_time < DATE '2015-11-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151118 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-21') AND
+         NEW.pass_time < DATE '2015-11-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151121 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-24') AND
+         NEW.pass_time < DATE '2015-11-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151124 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-27') AND
+         NEW.pass_time < DATE '2015-11-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151127 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-11-30') AND
+         NEW.pass_time < DATE '2015-12-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151130 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-03') AND
+         NEW.pass_time < DATE '2015-12-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151203 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-06') AND
+         NEW.pass_time < DATE '2015-12-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151206 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-09') AND
+         NEW.pass_time < DATE '2015-12-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151209 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-12') AND
+         NEW.pass_time < DATE '2015-12-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151212 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-15') AND
+         NEW.pass_time < DATE '2015-12-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151215 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-18') AND
+         NEW.pass_time < DATE '2015-12-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151218 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-21') AND
+         NEW.pass_time < DATE '2015-12-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151221 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-24') AND
+         NEW.pass_time < DATE '2015-12-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151224 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-27') AND
+         NEW.pass_time < DATE '2015-12-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151227 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2015-12-30') AND
+         NEW.pass_time < DATE '2016-01-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20151230 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-02') AND
+         NEW.pass_time < DATE '2016-01-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160102 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-05') AND
+         NEW.pass_time < DATE '2016-01-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160105 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-08') AND
+         NEW.pass_time < DATE '2016-01-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160108 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-11') AND
+         NEW.pass_time < DATE '2016-01-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160111 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-14') AND
+         NEW.pass_time < DATE '2016-01-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160114 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-17') AND
+         NEW.pass_time < DATE '2016-01-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160117 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-20') AND
+         NEW.pass_time < DATE '2016-01-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160120 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-23') AND
+         NEW.pass_time < DATE '2016-01-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160123 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-26') AND
+         NEW.pass_time < DATE '2016-01-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160126 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-01-29') AND
+         NEW.pass_time < DATE '2016-02-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160129 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-01') AND
+         NEW.pass_time < DATE '2016-02-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160201 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-04') AND
+         NEW.pass_time < DATE '2016-02-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160204 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-07') AND
+         NEW.pass_time < DATE '2016-02-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160207 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-10') AND
+         NEW.pass_time < DATE '2016-02-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160210 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-13') AND
+         NEW.pass_time < DATE '2016-02-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160213 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-16') AND
+         NEW.pass_time < DATE '2016-02-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160216 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-19') AND
+         NEW.pass_time < DATE '2016-02-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160219 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-22') AND
+         NEW.pass_time < DATE '2016-02-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160222 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-25') AND
+         NEW.pass_time < DATE '2016-02-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160225 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-02-28') AND
+         NEW.pass_time < DATE '2016-03-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160228 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-02') AND
+         NEW.pass_time < DATE '2016-03-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160302 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-05') AND
+         NEW.pass_time < DATE '2016-03-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160305 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-08') AND
+         NEW.pass_time < DATE '2016-03-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160308 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-11') AND
+         NEW.pass_time < DATE '2016-03-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160311 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-14') AND
+         NEW.pass_time < DATE '2016-03-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160314 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-17') AND
+         NEW.pass_time < DATE '2016-03-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160317 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-20') AND
+         NEW.pass_time < DATE '2016-03-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160320 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-23') AND
+         NEW.pass_time < DATE '2016-03-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160323 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-26') AND
+         NEW.pass_time < DATE '2016-03-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160326 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-03-29') AND
+         NEW.pass_time < DATE '2016-04-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160329 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-01') AND
+         NEW.pass_time < DATE '2016-04-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160401 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-04') AND
+         NEW.pass_time < DATE '2016-04-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160404 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-07') AND
+         NEW.pass_time < DATE '2016-04-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160407 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-10') AND
+         NEW.pass_time < DATE '2016-04-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160410 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-13') AND
+         NEW.pass_time < DATE '2016-04-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160413 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-16') AND
+         NEW.pass_time < DATE '2016-04-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160416 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-19') AND
+         NEW.pass_time < DATE '2016-04-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160419 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-22') AND
+         NEW.pass_time < DATE '2016-04-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160422 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-25') AND
+         NEW.pass_time < DATE '2016-04-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160425 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-04-28') AND
+         NEW.pass_time < DATE '2016-05-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160428 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-01') AND
+         NEW.pass_time < DATE '2016-05-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160501 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-04') AND
+         NEW.pass_time < DATE '2016-05-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160504 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-07') AND
+         NEW.pass_time < DATE '2016-05-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160507 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-10') AND
+         NEW.pass_time < DATE '2016-05-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160510 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-13') AND
+         NEW.pass_time < DATE '2016-05-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160513 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-16') AND
+         NEW.pass_time < DATE '2016-05-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160516 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-19') AND
+         NEW.pass_time < DATE '2016-05-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160519 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-22') AND
+         NEW.pass_time < DATE '2016-05-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160522 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-25') AND
+         NEW.pass_time < DATE '2016-05-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160525 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-28') AND
+         NEW.pass_time < DATE '2016-05-31' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160528 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-05-31') AND
+         NEW.pass_time < DATE '2016-06-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160531 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-03') AND
+         NEW.pass_time < DATE '2016-06-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160603 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-06') AND
+         NEW.pass_time < DATE '2016-06-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160606 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-09') AND
+         NEW.pass_time < DATE '2016-06-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160609 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-12') AND
+         NEW.pass_time < DATE '2016-06-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160612 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-15') AND
+         NEW.pass_time < DATE '2016-06-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160615 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-18') AND
+         NEW.pass_time < DATE '2016-06-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160618 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-21') AND
+         NEW.pass_time < DATE '2016-06-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160621 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-24') AND
+         NEW.pass_time < DATE '2016-06-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160624 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-27') AND
+         NEW.pass_time < DATE '2016-06-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160627 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-06-30') AND
+         NEW.pass_time < DATE '2016-07-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160630 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-03') AND
+         NEW.pass_time < DATE '2016-07-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160703 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-06') AND
+         NEW.pass_time < DATE '2016-07-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160706 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-09') AND
+         NEW.pass_time < DATE '2016-07-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160709 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-12') AND
+         NEW.pass_time < DATE '2016-07-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160712 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-15') AND
+         NEW.pass_time < DATE '2016-07-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160715 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-18') AND
+         NEW.pass_time < DATE '2016-07-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160718 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-21') AND
+         NEW.pass_time < DATE '2016-07-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160721 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-24') AND
+         NEW.pass_time < DATE '2016-07-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160724 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-27') AND
+         NEW.pass_time < DATE '2016-07-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160727 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-07-30') AND
+         NEW.pass_time < DATE '2016-08-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160730 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-02') AND
+         NEW.pass_time < DATE '2016-08-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160802 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-05') AND
+         NEW.pass_time < DATE '2016-08-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160805 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-08') AND
+         NEW.pass_time < DATE '2016-08-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160808 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-11') AND
+         NEW.pass_time < DATE '2016-08-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160811 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-14') AND
+         NEW.pass_time < DATE '2016-08-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160814 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-17') AND
+         NEW.pass_time < DATE '2016-08-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160817 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-20') AND
+         NEW.pass_time < DATE '2016-08-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160820 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-23') AND
+         NEW.pass_time < DATE '2016-08-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160823 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-26') AND
+         NEW.pass_time < DATE '2016-08-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160826 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-08-29') AND
+         NEW.pass_time < DATE '2016-09-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160829 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-01') AND
+         NEW.pass_time < DATE '2016-09-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160901 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-04') AND
+         NEW.pass_time < DATE '2016-09-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160904 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-07') AND
+         NEW.pass_time < DATE '2016-09-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160907 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-10') AND
+         NEW.pass_time < DATE '2016-09-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160910 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-13') AND
+         NEW.pass_time < DATE '2016-09-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160913 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-16') AND
+         NEW.pass_time < DATE '2016-09-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160916 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-19') AND
+         NEW.pass_time < DATE '2016-09-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160919 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-22') AND
+         NEW.pass_time < DATE '2016-09-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160922 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-25') AND
+         NEW.pass_time < DATE '2016-09-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160925 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-09-28') AND
+         NEW.pass_time < DATE '2016-10-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20160928 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-01') AND
+         NEW.pass_time < DATE '2016-10-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161001 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-04') AND
+         NEW.pass_time < DATE '2016-10-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161004 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-07') AND
+         NEW.pass_time < DATE '2016-10-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161007 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-10') AND
+         NEW.pass_time < DATE '2016-10-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161010 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-13') AND
+         NEW.pass_time < DATE '2016-10-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161013 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-16') AND
+         NEW.pass_time < DATE '2016-10-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161016 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-19') AND
+         NEW.pass_time < DATE '2016-10-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161019 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-22') AND
+         NEW.pass_time < DATE '2016-10-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161022 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-25') AND
+         NEW.pass_time < DATE '2016-10-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161025 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-28') AND
+         NEW.pass_time < DATE '2016-10-31' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161028 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-10-31') AND
+         NEW.pass_time < DATE '2016-11-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161031 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-03') AND
+         NEW.pass_time < DATE '2016-11-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161103 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-06') AND
+         NEW.pass_time < DATE '2016-11-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161106 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-09') AND
+         NEW.pass_time < DATE '2016-11-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161109 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-12') AND
+         NEW.pass_time < DATE '2016-11-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161112 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-15') AND
+         NEW.pass_time < DATE '2016-11-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161115 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-18') AND
+         NEW.pass_time < DATE '2016-11-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161118 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-21') AND
+         NEW.pass_time < DATE '2016-11-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161121 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-24') AND
+         NEW.pass_time < DATE '2016-11-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161124 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-27') AND
+         NEW.pass_time < DATE '2016-11-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161127 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-11-30') AND
+         NEW.pass_time < DATE '2016-12-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161130 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-03') AND
+         NEW.pass_time < DATE '2016-12-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161203 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-06') AND
+         NEW.pass_time < DATE '2016-12-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161206 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-09') AND
+         NEW.pass_time < DATE '2016-12-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161209 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-12') AND
+         NEW.pass_time < DATE '2016-12-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161212 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-15') AND
+         NEW.pass_time < DATE '2016-12-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161215 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-18') AND
+         NEW.pass_time < DATE '2016-12-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161218 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-21') AND
+         NEW.pass_time < DATE '2016-12-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161221 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-24') AND
+         NEW.pass_time < DATE '2016-12-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161224 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-27') AND
+         NEW.pass_time < DATE '2016-12-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161227 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2016-12-30') AND
+         NEW.pass_time < DATE '2017-01-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20161230 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-02') AND
+         NEW.pass_time < DATE '2017-01-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170102 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-05') AND
+         NEW.pass_time < DATE '2017-01-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170105 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-08') AND
+         NEW.pass_time < DATE '2017-01-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170108 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-11') AND
+         NEW.pass_time < DATE '2017-01-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170111 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-14') AND
+         NEW.pass_time < DATE '2017-01-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170114 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-17') AND
+         NEW.pass_time < DATE '2017-01-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170117 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-20') AND
+         NEW.pass_time < DATE '2017-01-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170120 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-23') AND
+         NEW.pass_time < DATE '2017-01-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170123 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-26') AND
+         NEW.pass_time < DATE '2017-01-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170126 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-01-29') AND
+         NEW.pass_time < DATE '2017-02-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170129 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-01') AND
+         NEW.pass_time < DATE '2017-02-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170201 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-04') AND
+         NEW.pass_time < DATE '2017-02-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170204 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-07') AND
+         NEW.pass_time < DATE '2017-02-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170207 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-10') AND
+         NEW.pass_time < DATE '2017-02-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170210 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-13') AND
+         NEW.pass_time < DATE '2017-02-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170213 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-16') AND
+         NEW.pass_time < DATE '2017-02-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170216 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-19') AND
+         NEW.pass_time < DATE '2017-02-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170219 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-22') AND
+         NEW.pass_time < DATE '2017-02-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170222 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-25') AND
+         NEW.pass_time < DATE '2017-02-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170225 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-02-28') AND
+         NEW.pass_time < DATE '2017-03-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170228 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-03') AND
+         NEW.pass_time < DATE '2017-03-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170303 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-06') AND
+         NEW.pass_time < DATE '2017-03-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170306 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-09') AND
+         NEW.pass_time < DATE '2017-03-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170309 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-12') AND
+         NEW.pass_time < DATE '2017-03-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170312 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-15') AND
+         NEW.pass_time < DATE '2017-03-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170315 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-18') AND
+         NEW.pass_time < DATE '2017-03-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170318 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-21') AND
+         NEW.pass_time < DATE '2017-03-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170321 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-24') AND
+         NEW.pass_time < DATE '2017-03-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170324 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-27') AND
+         NEW.pass_time < DATE '2017-03-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170327 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-03-30') AND
+         NEW.pass_time < DATE '2017-04-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170330 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-02') AND
+         NEW.pass_time < DATE '2017-04-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170402 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-05') AND
+         NEW.pass_time < DATE '2017-04-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170405 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-08') AND
+         NEW.pass_time < DATE '2017-04-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170408 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-11') AND
+         NEW.pass_time < DATE '2017-04-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170411 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-14') AND
+         NEW.pass_time < DATE '2017-04-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170414 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-17') AND
+         NEW.pass_time < DATE '2017-04-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170417 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-20') AND
+         NEW.pass_time < DATE '2017-04-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170420 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-23') AND
+         NEW.pass_time < DATE '2017-04-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170423 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-26') AND
+         NEW.pass_time < DATE '2017-04-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170426 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-04-29') AND
+         NEW.pass_time < DATE '2017-05-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170429 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-02') AND
+         NEW.pass_time < DATE '2017-05-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170502 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-05') AND
+         NEW.pass_time < DATE '2017-05-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170505 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-08') AND
+         NEW.pass_time < DATE '2017-05-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170508 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-11') AND
+         NEW.pass_time < DATE '2017-05-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170511 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-14') AND
+         NEW.pass_time < DATE '2017-05-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170514 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-17') AND
+         NEW.pass_time < DATE '2017-05-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170517 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-20') AND
+         NEW.pass_time < DATE '2017-05-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170520 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-23') AND
+         NEW.pass_time < DATE '2017-05-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170523 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-26') AND
+         NEW.pass_time < DATE '2017-05-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170526 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-05-29') AND
+         NEW.pass_time < DATE '2017-06-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170529 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-01') AND
+         NEW.pass_time < DATE '2017-06-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170601 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-04') AND
+         NEW.pass_time < DATE '2017-06-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170604 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-07') AND
+         NEW.pass_time < DATE '2017-06-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170607 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-10') AND
+         NEW.pass_time < DATE '2017-06-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170610 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-13') AND
+         NEW.pass_time < DATE '2017-06-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170613 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-16') AND
+         NEW.pass_time < DATE '2017-06-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170616 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-19') AND
+         NEW.pass_time < DATE '2017-06-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170619 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-22') AND
+         NEW.pass_time < DATE '2017-06-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170622 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-25') AND
+         NEW.pass_time < DATE '2017-06-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170625 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-06-28') AND
+         NEW.pass_time < DATE '2017-07-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170628 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-01') AND
+         NEW.pass_time < DATE '2017-07-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170701 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-04') AND
+         NEW.pass_time < DATE '2017-07-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170704 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-07') AND
+         NEW.pass_time < DATE '2017-07-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170707 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-10') AND
+         NEW.pass_time < DATE '2017-07-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170710 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-13') AND
+         NEW.pass_time < DATE '2017-07-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170713 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-16') AND
+         NEW.pass_time < DATE '2017-07-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170716 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-19') AND
+         NEW.pass_time < DATE '2017-07-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170719 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-22') AND
+         NEW.pass_time < DATE '2017-07-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170722 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-25') AND
+         NEW.pass_time < DATE '2017-07-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170725 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-28') AND
+         NEW.pass_time < DATE '2017-07-31' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170728 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-07-31') AND
+         NEW.pass_time < DATE '2017-08-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170731 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-03') AND
+         NEW.pass_time < DATE '2017-08-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170803 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-06') AND
+         NEW.pass_time < DATE '2017-08-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170806 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-09') AND
+         NEW.pass_time < DATE '2017-08-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170809 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-12') AND
+         NEW.pass_time < DATE '2017-08-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170812 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-15') AND
+         NEW.pass_time < DATE '2017-08-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170815 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-18') AND
+         NEW.pass_time < DATE '2017-08-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170818 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-21') AND
+         NEW.pass_time < DATE '2017-08-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170821 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-24') AND
+         NEW.pass_time < DATE '2017-08-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170824 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-27') AND
+         NEW.pass_time < DATE '2017-08-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170827 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-08-30') AND
+         NEW.pass_time < DATE '2017-09-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170830 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-02') AND
+         NEW.pass_time < DATE '2017-09-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170902 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-05') AND
+         NEW.pass_time < DATE '2017-09-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170905 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-08') AND
+         NEW.pass_time < DATE '2017-09-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170908 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-11') AND
+         NEW.pass_time < DATE '2017-09-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170911 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-14') AND
+         NEW.pass_time < DATE '2017-09-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170914 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-17') AND
+         NEW.pass_time < DATE '2017-09-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170917 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-20') AND
+         NEW.pass_time < DATE '2017-09-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170920 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-23') AND
+         NEW.pass_time < DATE '2017-09-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170923 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-26') AND
+         NEW.pass_time < DATE '2017-09-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170926 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-09-29') AND
+         NEW.pass_time < DATE '2017-10-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20170929 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-02') AND
+         NEW.pass_time < DATE '2017-10-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171002 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-05') AND
+         NEW.pass_time < DATE '2017-10-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171005 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-08') AND
+         NEW.pass_time < DATE '2017-10-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171008 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-11') AND
+         NEW.pass_time < DATE '2017-10-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171011 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-14') AND
+         NEW.pass_time < DATE '2017-10-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171014 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-17') AND
+         NEW.pass_time < DATE '2017-10-20' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171017 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-20') AND
+         NEW.pass_time < DATE '2017-10-23' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171020 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-23') AND
+         NEW.pass_time < DATE '2017-10-26' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171023 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-26') AND
+         NEW.pass_time < DATE '2017-10-29' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171026 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-10-29') AND
+         NEW.pass_time < DATE '2017-11-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171029 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-01') AND
+         NEW.pass_time < DATE '2017-11-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171101 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-04') AND
+         NEW.pass_time < DATE '2017-11-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171104 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-07') AND
+         NEW.pass_time < DATE '2017-11-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171107 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-10') AND
+         NEW.pass_time < DATE '2017-11-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171110 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-13') AND
+         NEW.pass_time < DATE '2017-11-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171113 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-16') AND
+         NEW.pass_time < DATE '2017-11-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171116 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-19') AND
+         NEW.pass_time < DATE '2017-11-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171119 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-22') AND
+         NEW.pass_time < DATE '2017-11-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171122 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-25') AND
+         NEW.pass_time < DATE '2017-11-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171125 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-11-28') AND
+         NEW.pass_time < DATE '2017-12-01' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171128 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-01') AND
+         NEW.pass_time < DATE '2017-12-04' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171201 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-04') AND
+         NEW.pass_time < DATE '2017-12-07' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171204 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-07') AND
+         NEW.pass_time < DATE '2017-12-10' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171207 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-10') AND
+         NEW.pass_time < DATE '2017-12-13' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171210 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-13') AND
+         NEW.pass_time < DATE '2017-12-16' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171213 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-16') AND
+         NEW.pass_time < DATE '2017-12-19' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171216 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-19') AND
+         NEW.pass_time < DATE '2017-12-22' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171219 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-22') AND
+         NEW.pass_time < DATE '2017-12-25' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171222 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-25') AND
+         NEW.pass_time < DATE '2017-12-28' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171225 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-28') AND
+         NEW.pass_time < DATE '2017-12-31' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171228 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2017-12-31') AND
+         NEW.pass_time < DATE '2018-01-03' ) THEN
+        INSERT INTO traffic_vehicle_pass_20171231 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-03') AND
+         NEW.pass_time < DATE '2018-01-06' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180103 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-06') AND
+         NEW.pass_time < DATE '2018-01-09' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180106 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-09') AND
+         NEW.pass_time < DATE '2018-01-12' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180109 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-12') AND
+         NEW.pass_time < DATE '2018-01-15' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180112 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-15') AND
+         NEW.pass_time < DATE '2018-01-18' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180115 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-18') AND
+         NEW.pass_time < DATE '2018-01-21' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180118 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-21') AND
+         NEW.pass_time < DATE '2018-01-24' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180121 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-24') AND
+         NEW.pass_time < DATE '2018-01-27' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180124 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-27') AND
+         NEW.pass_time < DATE '2018-01-30' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180127 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-01-30') AND
+         NEW.pass_time < DATE '2018-02-02' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180130 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-02-02') AND
+         NEW.pass_time < DATE '2018-02-05' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180202 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-02-05') AND
+         NEW.pass_time < DATE '2018-02-08' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180205 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-02-08') AND
+         NEW.pass_time < DATE '2018-02-11' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180208 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-02-11') AND
+         NEW.pass_time < DATE '2018-02-14' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180211 VALUES (NEW.*)
+
+    ELSIF ( NEW.pass_time >= DATE '2018-02-14') AND
+         NEW.pass_time < DATE '2018-02-17' ) THEN
+        INSERT INTO traffic_vehicle_pass_20180214 VALUES (NEW.*)
+
+    ELSE
+        RAISE EXCEPTION 'Date out of range. Fix the traffic_vehicle_pass_insert_trigger() function!';
+    END IF;
+    RETURN NULL;
+END
+&&
+LANGUAGE plpgsql;

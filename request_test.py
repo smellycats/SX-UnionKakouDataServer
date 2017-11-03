@@ -7,8 +7,8 @@ import arrow
 import requests
 from requests.auth import HTTPBasicAuth, HTTPDigestAuth
 
-IP = '127.0.0.1'
-PORT = 5000
+IP = '10.0.0.63'
+PORT = 8080
 
 def send_get(url,headers = {'content-type': 'application/json'}):
     """POST请求"""

@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 u"""helper functions.
 
     SX-SMSServer.helper
@@ -9,6 +9,7 @@ u"""helper functions.
     :copyright: (c) 2015 by Fire.
     :license: BSD, see LICENSE for more details.
 """
+import re
 
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, SignatureExpired, BadSignature
 
@@ -76,4 +77,41 @@ def ip2num(ip):
 def num2ip(num):
     u"""整数转IP地址."""
     return '.'.join([str(num/(256**i)%256) for i in range(3,-1,-1)])
+
+def hphm2hpzl(hphm, hpys, hpzl):
+    if hphm is None:
+	return '99'
+    if len(hphm) <= 2:
+	return '99'
+    if hpzl == '7' or hpzl == '07':
+	return '07'
+    if hpzl == '8':
+        return '88'
+    if re.match('^[0-9a-zA-Z]+$', hphm) and len(hphm) == 5 and hpys == 1:
+	return '07'
+    if hphm[-1] == u'领':
+	return '04'
+    if hphm[1] == u'使':
+	return '03'
+    if hphm[-1] == u'港':
+	return '26'
+    if hphm[-1] == u'澳':
+	return '27'
+    if hpys == 3:
+	return '06'
+    if hphm[-1] == u'学':
+	return '16'
+    if hpys == 1:
+	return '01'
+    if hphm[-1] == u'警':
+	return '23'
+    if hphm[:2] == u'WJ':
+	return '31'
+    if hpys == 0:
+	return '32'
+    if hpys == 2:
+	return '02'
+    if hpys == 4:
+        return '88'
+    return '99'
 

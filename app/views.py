@@ -8,14 +8,14 @@ from flask_restful import reqparse, abort, Resource
 from passlib.hash import sha256_crypt
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
-from . import db, app, auth, limiter, logger, access_logger
+from . import db, app, auth, limiter, cache, logger, access_logger
 from models import *
 #from help_func import *
 import helper
 
 
 def verify_addr(f):
-    """IPåœ°å€ç™½åå•"""
+    """IPµØÖ·°×Ãûµ¥"""
     @wraps(f)
     def decorated_function(*args, **kwargs):
         if not app.config['WHITE_LIST_OPEN'] or \
@@ -25,12 +25,13 @@ def verify_addr(f):
         else:
             return jsonify({
                 'status': '403.6',
-                'message': u'ç¦æ­¢è®¿é—®:å®¢æˆ·ç«¯çš„ IP åœ°å€è¢«æ‹’ç»'}), 403
+                'message': u'123'}), 403
         return f(*args, **kwargs)
     return decorated_function
 
 
 @auth.verify_password
+@cache.memoize(60 * 5)
 def verify_pw(username, password):
     user = Users.query.filter_by(username=username).first()
     if user:
@@ -40,35 +41,9 @@ def verify_pw(username, password):
     return False
 
 
-def verify_token(f):
-    """tokenéªŒè¯è£…é¥°å™¨"""
-    @wraps(f)
-    def decorated_function(*args, **kwargs):
-        if app.config['TOKEN_OPEN']:
-            g.uid = helper.ip2num(request.remote_addr)
-            g.scope = set(['all'])
-        else:
-            if not request.headers.get('Access-Token'):
-                return jsonify({'status': '401.6',
-                                'message': 'missing token header'}), 401
-            token_result = verify_auth_token(request.headers['Access-Token'],
-                                             app.config['SECRET_KEY'])
-            if not token_result:
-                return jsonify({'status': '401.7',
-                                'message': 'invalid token'}), 401
-            elif token_result == 'expired':
-                return jsonify({'status': '401.8',
-                                'message': 'token expired'}), 401
-            g.uid = token_result['uid']
-            g.scope = set(token_result['scope'])
-
-        return f(*args, **kwargs)
-    return decorated_function
-
-
 def verify_scope(scope):
     def scope(f):
-        """æƒé™èŒƒå›´éªŒè¯è£…é¥°å™¨"""
+        """È¨ÏÞ·¶Î§ÑéÖ¤×°ÊÎÆ÷"""
         @wraps(f)
         def decorated_function(*args, **kwargs):
             if 'all' in g.scope or scope in g.scope:
@@ -129,13 +104,13 @@ def user_patch(user_id):
             'code': 'missing_field'
         }
         return jsonify({'message': 'Validation Failed', 'errors': error}), 422
-    # æ‰€æœ‰æƒé™èŒƒå›´
+    # ËùÓÐÈ¨ÏÞ·¶Î§
     all_scope = set()
     for i in Scope.query.all():
         all_scope.add(i.name)
-    # æŽˆäºˆçš„æƒé™èŒƒå›´
+    # ÊÚÓèµÄÈ¨ÏÞ·¶Î§
     request_scope = set(request.json.get('scope', u'null').split(','))
-    # æ±‚äº¤é›†åŽçš„æƒé™
+    # Çó½»¼¯ºóµÄÈ¨ÏÞ
     u_scope = ','.join(all_scope & request_scope)
 
     db.session.query(Users).filter_by(id=user_id).update(
@@ -188,13 +163,13 @@ def user_post():
 
     password_hash = sha256_crypt.encrypt(
         request.json['password'], rounds=app.config['ROUNDS'])
-    # æ‰€æœ‰æƒé™èŒƒå›´
+    # ËùÓÐÈ¨ÏÞ·¶Î§
     all_scope = set()
     for i in Scope.query.all():
         all_scope.add(i.name)
-    # æŽˆäºˆçš„æƒé™èŒƒå›´
+    # ÊÚÓèµÄÈ¨ÏÞ·¶Î§
     request_scope = set(request.json.get('scope', u'null').split(','))
-    # æ±‚äº¤é›†åŽçš„æƒé™
+    # Çó½»¼¯ºóµÄÈ¨ÏÞ
     u_scope = ','.join(all_scope & request_scope)
     u = Users(username=request.json['username'], password=password_hash,
               scope=u_scope, banned=0)
@@ -221,50 +196,45 @@ def scope_get():
     items = map(helper.row2dict, Scope.query.all())
     return jsonify({'total_count': len(items), 'items': items}), 200
 
-    
-@app.route('/token', methods=['OPTIONS'])
-@limiter.limit('5000/hour')
-def token_options():
-    return jsonify(), 200
 
-@app.route('/token', methods=['POST'])
-@limiter.limit('5/minute')
-def token_post():
+@cache.memoize(60)
+def get_bk_by_hphm(hphm):
+    return TrafficDispositionVehicle.query.filter_by(plate_no=hphm, del_flag=0).first()
+
+# Ìí¼Ó²¼¿Ø³µÅÆ
+def set_bkcp(i):
+    if i['hphm'] == '-' or i['hphm'] is None:
+	return
+    tsv = get_bk_by_hphm(i['hphm'])
+    if tsv is None:
+	return
+
+    fxbh = {u'IN': 9, u'OT': 10, u'WE': 2, u'EW': 1,u'SN': 3, u'NS':4}
+    hpzl = helper.hphm2hpzl(i['hphm'], i['hpys_id'], i['hpzl'])
+    sql = (u"insert into traffic_disposition_alarm(disposition_type, disposition_id, disposition_reason, crossing_id, lane_no, direction_index, pass_time, plate_no, plate_type, plate_color, vehicle_speed, image_path) VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}')".format(tsv.disposition_type, tsv.disposition_id, tsv.disposition_reason, i['kkdd_id'], i['cdbh'], fxbh.get(i['fxbh'], 9), i['jgsj'], i['hphm'], hpzl, i['hpys_id'], i['clsd'], i['img_path']))
+    query = db.get_engine(app, bind='kakou').execute(sql)
+    query.close()
+
+@cache.memoize(60)
+def get_special_vehicle():
     try:
-        if request.json is None:
-            return jsonify({'message': 'Problems parsing JSON'}), 415
-        if not request.json.get('username', None):
-            error = {
-                'resource': 'Token',
-                'field': 'username',
-                'code': 'missing_field'
-            }
-            return jsonify({'message': 'Validation Failed', 'errors': error}), 422
-        if not request.json.get('password', None):
-            error = {'resource': 'Token', 'field': 'password',
-                     'code': 'missing_field'}
-            return jsonify({'message': 'Validation Failed', 'errors': error}), 422
-        user = Users.query.filter_by(username=request.json.get('username'),
-                                     banned=0).first()
-        if not user:
-            return jsonify({'message': 'username or password error'}), 422
-        if not sha256_crypt.verify(request.json.get('password'), user.password):
-            return jsonify({'message': 'username or password error'}), 422
-
-        s = Serializer(app.config['SECRET_KEY'],
-                       expires_in=app.config['EXPIRES'])
-        token = s.dumps({'uid': user.id, 'scope': user.scope.split(',')})
+        r = set()
+        t = TrafficSpecialVehicle.query.filter_by().all()
+        for i in t:
+	    r.add((i.plate_no, int(i.plate_color)))
+        return r
     except Exception as e:
-        print e
+	logger.exception(e)
+	return set()
 
-    return jsonify({
-        'uid': user.id,
-        'access_token': token,
-        'token_type': 'self',
-        'scope': user.scope,
-        'expires_in': app.config['EXPIRES']
-    }), 201
-
+# ÅÐ¶ÏÊÇ·ñ°×Ãûµ¥³µÁ¾
+def is_spcp(i):
+    if i['hphm'] == '-' or i['hphm'] is None:
+	return False
+    sp = get_special_vehicle()
+    if (i['hphm'], i['hpys_id']) in sp:
+	return True
+    return False
 
 @app.route('/kakou', methods=['POST'])
 #@limiter.limit('5000/hour')
@@ -273,24 +243,40 @@ def token_post():
 def kakou_post():
     if not request.json:
         return jsonify({'message': 'Problems parsing JSON'}), 415
-    tra_list = []
+    #tra_list = []
+    fxbh = {u'IN': 9, u'OT': 10, u'WE': 2, u'EW': 1,u'SN': 3, u'NS':4}
     try:
-        for i in request.json:
-            tra = Traffic(crossing_id=i['kkdd_id'],
-                          lane_no=i['cdbh'],
-                          direction_index=i['fxbh'],
-                          plate_no=i['hphm'],
-                          plate_type=i.get('cllx', 'X99'),
-                          pass_time=i['jgsj'],
-                          plate_color=i['hpys_id'],
-                          image_path=i['img_path'])
-            db.session.add(tra)
-            tra_list.append(tra)
+	# Õý³£³µÁ¾Êý¾Ý
+	vals = []
+	# °×Ãûµ¥Êý¾Ý
+	w_vals = []
+	for i in request.json:
+	    hpzl = helper.hphm2hpzl(i['hphm'], i['hpys_id'], i['hpzl'])
+
+	    if is_spcp(i):
+	    	w_vals.append(u"('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')".format(
+		    i['kkdd_id'], i['cdbh'], fxbh.get(i['fxbh'], 9), i['hphm'], hpzl, i['jgsj'], i['hpys_id'], i['img_path'], 0, 0, i['clsd']))
+	    else:
+		set_bkcp(i)
+	    	vals.append(u"('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')".format(
+		    i['kkdd_id'], i['cdbh'], fxbh.get(i['fxbh'], 9), i['hphm'], hpzl, i['jgsj'], i['hpys_id'], i['img_path'], 0, 0, i['clsd']))
+	if len(vals) > 0:
+	    sql = (u"insert into traffic_vehicle_pass(crossing_id, lane_no, direction_index, plate_no, plate_type, pass_time, plate_color, image_path, vehicle_color, vehicle_type, vehicle_speed) VALUES %s" % ','.join(vals))
+	    query = db.get_engine(app, bind='kakou').execute(sql)
+	    query.close()
+	if len(w_vals) > 0:
+	    try:
+	        sql2 = (u"insert into traffic_privilegevehicle_pass(crossing_id, lane_no, direction_index, plate_no, plate_type, pass_time, plate_color, image_path, vehicle_color, vehicle_type, vehicle_speed) VALUES %s" % ','.join(w_vals))
+	        query = db.get_engine(app, bind='kakou').execute(sql2)
+		query.close()
+	    except Exception as e:
+		pass
+		#logger.exception(e)
     except Exception as e:
-        logger.error(e)
+	logger.error('request.json')
+	logger.error(request.json)
+        logger.exception(e)
         raise
-    db.session.commit()
-    result = [{'id': r.pass_id} for r in tra_list]
     
-    return jsonify({'total':len(result), 'items':result}), 201
+    return jsonify({'total': len(request.json)}), 201
 

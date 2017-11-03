@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import arrow
 
-from app import db
+from app import db, app
 from app.models import Users, Scope, Traffic
 from app.helper import *
 
@@ -17,8 +17,15 @@ def test_user_get():
     
 def test_traffic_get():
     r = Traffic.query.first()
-    #help(r)
     print type(r.pass_time)
+    #print r.crossing_id
+
+def test_traffic_get2():
+    sql = "select * from traffic_vehicle_pass where pass_id >= 50"
+    query = db.get_engine(app).execute(sql)
+    r = query.fetchall()
+    for i in r:
+        print i
     #print r.crossing_id
 
 def test_traffic_add():
@@ -34,6 +41,7 @@ def test_traffic_add():
     print r
 
 
+
 if __name__ == '__main__':
     #hpys_test()
     #hbc_add()
@@ -43,7 +51,7 @@ if __name__ == '__main__':
     #test_hbc_add()
     #test_hbcimg_get()
     #test_kkdd()
-    test_traffic_get()
-    test_traffic_add()
+    test_traffic_get2()
+    #test_traffic_add()
 
 
